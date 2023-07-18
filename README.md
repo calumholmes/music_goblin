@@ -1,6 +1,6 @@
 # Music Fairy
 
-Music Fairy is a script that utilizes speech recognition to play any song audio in MPD (Music Player Daemon). It uses YouTube as a source to fetch music and integrates with various libraries and tools to provide a seamless music playback experience.
+Music Goblin is a script that plays any song audio in MPD (Music Player Daemon). It uses YouTube as a source to fetch music and integrates with various libraries and tools to provide a seamless music playback experience.
 
 ## Installation
 
@@ -8,33 +8,23 @@ To install Music Fairy, follow these steps:
 
 1. Clone the repository from GitHub: [github.com/bugswriter/music_fairy](https://github.com/bugswriter/music_fairy)
 
-2. Copy the `music-fairy` script into `~/.local/bin` on your system.
+2. Copy the `music-fairy` script somewhere on your system.
 
-3. Install the required Python packages by running the following commands:
-
-```
-pip3 install vosk
-pip3 install yt-dlp
-pip3 install google_speech
-```
+3. Install yt-dlp.
 
 4. Ensure that `ffmpeg` is installed on your system.
 
-5. Download the Vosk model from [alphacephei.com/vosk/models](https://alphacephei.com/vosk/models). It is recommended to download the lighter model with a smaller file size.
-
-6. Put the model directory in `~/.local/share/music_fairy/`, or change the `VOSK_MODEL_PATH` variable to the path where you downloaded the Vosk model.
-
-7. Bind Music Fairy to a specific key using your system's keybinding configuration.
+5. Bind Music Goblin to a specific key using your system's keybinding configuration or just run it with the sh command.
 
 ## Usage
 
-Once installed and configured, you can use Music Fairy to play songs by following these steps:
+Once installed and configured, you can use Music Goblin to play songs by following these steps:
 
-1. Activate the speech recognition by pressing the bound key.
+1. Activate the script by pressing the bound key or using the command sh /PATH/music-goblin.sh
 
-2. Speak the name of the song or artist you want to play.
+2. Type the name of the song you want to play.
 
-3. Music Fairy will fetch the audio from YouTube and play it using MPD.
+3. Music Goblin will fetch the audio from YouTube and play it using MPD.
 
 4. Enjoy your music!
 
@@ -44,4 +34,4 @@ Please note that a working internet connection is required for Music Fairy to fe
 - GPL-3
 
 ## Support
-- Checkout my donate page - [bugswriter.com/donate](https://bugswriter.com/donate)
+- Checkout bugswriter's donate page - [bugswriter.com/donate](https://bugswriter.com/donate)
