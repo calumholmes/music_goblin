@@ -6,7 +6,7 @@ Music Goblin is a script that plays any song audio in MPD (Music Player Daemon).
 
 To install Music Goblin, follow these steps:
 
-1. Clone the repository from GitHub: [github.com/bugswriter/music_fairy](https://github.com/bugswriter/music_fairy)
+1. Clone the repository from GitHub: [github.com/calumholmes/music-goblin](https://github.com/calumholmes/music-goblin)
 
 2. Copy the `music-goblin` script somewhere on your system.
 
