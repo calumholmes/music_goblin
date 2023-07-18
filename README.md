@@ -4,11 +4,11 @@ Music Goblin is a script that plays any song audio in MPD (Music Player Daemon).
 
 ## Installation
 
-To install Music Fairy, follow these steps:
+To install Music Goblin, follow these steps:
 
 1. Clone the repository from GitHub: [github.com/bugswriter/music_fairy](https://github.com/bugswriter/music_fairy)
 
-2. Copy the `music-fairy` script somewhere on your system.
+2. Copy the `music-goblin` script somewhere on your system.
 
 3. Install yt-dlp.
 
@@ -20,7 +20,7 @@ To install Music Fairy, follow these steps:
 
 Once installed and configured, you can use Music Goblin to play songs by following these steps:
 
-1. Activate the script by pressing the bound key or using the command sh /PATH/music-goblin.sh
+1. Activate the script by pressing the bound key or using the command sh /PATH/music-goblin
 
 2. Type the name of the song you want to play.
 
