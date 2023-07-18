@@ -1,4 +1,4 @@
-# Music Fairy
+# Music Goblin
 
 Music Goblin is a script that plays any song audio in MPD (Music Player Daemon). It uses YouTube as a source to fetch music and integrates with various libraries and tools to provide a seamless music playback experience.
 
