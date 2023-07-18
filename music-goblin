@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# YT-Music Stream MPD/C
+#
+# Edited from https://github.com/Bugswriter/music_fairy/blob/master/music-fairy
+
+# variables
+VOSK_MODEL_PATH="$HOME/.local/share/music_fairy/vosk-model-small-en-in-0.4/"
+INVIDIOUS_INSTANCE="https://vid.puffyan.us" # some instances might not work
+
+# read search query
+read -p "Search: " search
+
+# make youtube search query
+query="$(printf '%s' "song audio $search" | tr ' ' '+' )"
+
+# search on invidous (youtube) instance for video id to make a url
+video_id="$(curl -s "$INVIDIOUS_INSTANCE/search?q=$query" | grep -Eo "watch\?v=.{11}" | head -n 1)"
+youtube_url="https://youtube.com/$video_id"
+
+# get url for bestaudio stream from the youtube video
+audio_url="$(yt-dlp -f bestaudio --get-url "$youtube_url")"
+
+# add the track to mpd and play
+mpc add "$audio_url"
+mpc play
