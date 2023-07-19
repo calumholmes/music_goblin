@@ -4,8 +4,7 @@
 #
 # Edited from https://github.com/Bugswriter/music_fairy/blob/master/music-fairy
 
-# variables
-VOSK_MODEL_PATH="$HOME/.local/share/music_fairy/vosk-model-small-en-in-0.4/"
+# set invidious instance
 INVIDIOUS_INSTANCE="https://vid.puffyan.us" # some instances might not work
 
 # read search query
